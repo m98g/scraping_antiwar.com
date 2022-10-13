@@ -21,7 +21,7 @@ class antiwarSpider(scrapy.Spider):
         'news.antiwar.com'
     ]
     start_urls = [
-        'https://news.antiwar.com/2022/05/18/finland-sweden-formally-submit-nato-applications/',
+        'https://news.antiwar.com/2020/12/31/uk-judge-to-give-decision-on-assange-extradition-on-monday/',
     ]
 
     def parse(self, response):
@@ -53,7 +53,7 @@ class antiwarSpider(scrapy.Spider):
         # give a specific date to stop downloading when its hit
         for ref in response.css('footer.entry-footer'):
             x = ref.css('time.entry-date::text').get()
-            if '2021' in x:
+            if '2019' in x:
                 print(x)
                 # get the url and store it in a txt
                 with open('last_url.txt', 'w') as l:
