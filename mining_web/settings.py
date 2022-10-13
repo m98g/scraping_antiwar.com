@@ -14,7 +14,7 @@ NEWSPIDER_MODULE = 'mining_web.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = f'm98::m98contact@gmail.com {BOT_NAME}'
+USER_AGENT = f'm98:: {BOT_NAME}'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
